@@ -30,7 +30,7 @@ SELECT d.name,c.model
 FROM drivers_1 d
 LEFT JOIN cars_1 c ON d.car_id = c.id
 
-UNION ALL
+UNION 
 
 SELECT d.name,c.model
 FROM cars_1 c
@@ -43,7 +43,7 @@ FROM drivers_1 d
 LEFT JOIN cars_1 c ON d.car_id = c.id
 WHERE c.id IS NULL
 
-UNION ALL
+UNION 
 
 SELECT d.name,c.model
 FROM cars_1 c
